@@ -1,0 +1,28 @@
+{
+  "name": "Take a Break",
+  "description": "A simple chrome extension that reminds you to take a break",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "./workers/background.js"
+  },
+  "icons": {
+    "16": "images/icon-64.png",
+    "32": "images/icon-64.png"
+  },
+  "permissions": ["storage", "alarms", "notifications"],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/*"],
+      "matches": ["<all_urls>"],
+      "extension_ids": ["*"]
+    }
+  ],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';",
+    "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'wasm-eval' 'unsafe-inline' 'unsafe-eval'; child-src 'self';"
+  }
+}
