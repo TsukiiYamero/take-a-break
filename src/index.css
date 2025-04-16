@@ -1,8 +1,10 @@
+@import './styles/global.scss';
 @import 'tailwindcss';
 @config "../tailwind.config.js";
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-family: 'Poppins', system-ui, sans-serif;
+  font-family: var(--font-family);
   line-height: 1.5;
   font-weight: 400;
 
@@ -33,4 +35,5 @@ body {
   width: 500px;
   height: 588px;
   background-color: #2b1d50e5;
+  font-family: var(--font-family);
 }

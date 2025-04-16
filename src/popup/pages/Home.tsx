@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import reactLogo from '../../assets/react.svg';
-import viteLogo from '../../../public/vite.svg';
 import { Button } from '@heroui/react';
 import '../../styles/global.scss';
 
@@ -10,14 +9,11 @@ export const Home = () => {
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1 className="bg-red-500">HOME</h1>
+      <h1 className="text-3xl font-bold bg-red-500">Amonestaciun</h1>
       <div className="card">
         <Button color="primary" onPress={() => setCount((count) => count + 1)}>
           count is {count}
