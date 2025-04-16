@@ -9,8 +9,6 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -34,6 +32,6 @@ body {
   margin: 0;
   width: 500px;
   height: 588px;
-  background-color: #2b1d50e5;
   font-family: var(--font-family);
+  outline: 2px solid rgb(17, 12, 58);
 }

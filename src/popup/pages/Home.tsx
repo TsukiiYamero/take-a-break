@@ -8,17 +8,17 @@ export const Home = () => {
 
   return (
     <>
-      <div>
+      <div className="bg-background-primary">
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1 className="text-3xl font-bold bg-red-500">Amonestaciun</h1>
+      <h1 className="text-3xl font-bold bg-red-500 text-text-primary">Amonestaciun</h1>
       <div className="card">
         <Button color="primary" onPress={() => setCount((count) => count + 1)}>
           count is {count}
         </Button>
-        <p>
+        <p className="text-text-primary dark:text-text-light">
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
